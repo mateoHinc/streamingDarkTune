@@ -17,6 +17,30 @@ export default {
           heading: ["Montserrat", "sans-serif"], // Títulos
         },
       },
+      keyframes: {
+        spinOpen: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(90deg) " },
+        },
+        spinClose: {
+          "0%": { transform: "rotate(90deg)" },
+          "100%": { transform: "rotate(0deg) " },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(-20%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(0)", opacity: "1" },
+          "100%": { transform: "translateY(-20%)", opacity: "0" },
+        },
+      },
+      animation: {
+        "spin-open": "spinOpen 0.3s ease-in-out forwards",
+        "spin-close": "spinClose 0.3s ease-in-out forwards",
+        "menu-open": "slideDown 0.3s ease-out forwards",
+        "menu-close": "slideUp 0.2s ease-in forwards",
+      },
     },
   },
   plugins: [],
