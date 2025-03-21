@@ -42,6 +42,21 @@ export default {
         "menu-close": "slideUp 0.2s ease-in forwards",
       },
     },
+    screens: {
+      xs: "480px", // o el valor que quieras para xs
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
+  },
+  variants: {
+    animation: ["responsive", "hover", "group-hover"],
+    animate: ["responsive", "hover", "group-hover"],
+    fontSize: ["responsive", "hover", "group-hover"],
+    scale: ["responsive", "hover", "group-hover"],
+    padding: ["responsive", "hover", "group-hover"],
   },
   plugins: [],
 };
