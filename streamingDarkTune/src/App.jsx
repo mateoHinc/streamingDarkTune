@@ -9,21 +9,21 @@ import Footer from "./components/footer";
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [showHero, setShowHero] = useState(false);
+  const [triggerHero, setTriggerHero] = useState(false);
 
   useEffect(() => {
     const hash = window.location.hash;
     if (hash === "#hero") {
-      setShowHero(true);
+      setTriggerHero(true);
     }
   }, []);
 
   const handleNext = () => {
-    setShowHero(true);
-    window.location.hash = "#hero";
+    document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
+
     setTimeout(() => {
-      document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
-    }, 100);
+      setTriggerHero(true);
+    }, 300);
   };
 
   return (
@@ -32,7 +32,7 @@ function App() {
       <main className="flex flex-grow justify-center items-center">
         <HomePage onNext={handleNext} />
       </main>
-      <HeroSection triggerAnimation={true} />
+      <HeroSection triggerAnimation={triggerHero} />
       <Footer />
     </div>
   );
