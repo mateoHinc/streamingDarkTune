@@ -47,7 +47,7 @@ function HeroSection({ triggerAnimation }) {
           onClick={(e) => {
             e.preventDefault();
             document
-              .getElementById("hero")
+              .getElementById("genres")
               .scrollIntoView({ behavior: "smooth" });
           }}
           className="bg-secondary hover:bg-accent px-5 sm:px-6 py-3 rounded-lg text-white text-sm sm:text-base transition duration-300"

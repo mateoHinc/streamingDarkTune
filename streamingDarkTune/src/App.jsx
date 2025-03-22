@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import HomePage from "./components/HomePage";
 import Footer from "./components/footer";
+import CarruselGenreSection from "./components/CarruselGenreSection";
 
 import React, { useState, useEffect } from "react";
 
@@ -33,6 +34,7 @@ function App() {
         <HomePage onNext={handleNext} />
       </main>
       <HeroSection triggerAnimation={triggerHero} />
+      <CarruselGenreSection />
       <Footer />
     </div>
   );
