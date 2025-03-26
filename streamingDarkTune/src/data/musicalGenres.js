@@ -3,31 +3,31 @@ const genres = [
     name: "Rock",
     description:
       "Guitarras distorsionadas, pelos alborotados y actitud de 'yo contra el mundo'. El rock nunca muere, solo se pone más ruidoso.",
-    image: "/src/assets/genre-rock.jpg",
+    image: "/src/assets/newGenre-Rock.jpg",
   },
   {
     name: "Heavy Metal",
     description:
       "Más riffs que tu cuñado metalero y más gritos que un lunes sin café. Aquí no se viene a susurrar, se viene a romper cuellos (con headbanging, claro).",
-    image: "/src/assets/genre-heavyMetal.jpg",
+    image: "/src/assets/newGenre-HeavyMetal.jpg",
   },
   {
     name: "Punk",
     description:
       "Tres acordes, una cerverza y cero ganas de seguir reglas. Si algo está roto, el punk no lo arregla, lo hace canción.",
-    image: "/src/assets/genre-punk.jpg",
+    image: "/src/assets/newGenre-Punk.jpg",
   },
   {
     name: "Hip Hop",
     description:
       "Verso tras verso, el hip hop escupe verdad con estilo. Rimas callejeras, beats con alma y flow que no se compra, se vive.",
-    image: "/src/assets/genre-hiphop.jpg",
+    image: "/src/assets/newGenre-HipHop.png",
   },
   {
     name: "Pop",
     description:
       "Melodías pegajosas como chicle en la suela. El pop es ese guilty pleasure que tarareas aunque jures que solo escuchas rap underground.",
-    image: "/src/assets/genre-pop.jpg",
+    image: "/src/assets/newGenre-Pop.jpg",
   },
   {
     name: "K-Pop",
