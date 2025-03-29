@@ -32,7 +32,7 @@ function UserReviewsSection() {
         playsInline
         className="top-0 left-0 z-0 absolute w-full h-full object-cover"
       >
-        <source src="/src/assets/videoMusicLoop.mp4" type="video/mp4" />
+        <source src="/assets/videoMusicLoop.mp4" type="video/mp4" />
       </video>
 
       <div className="z-10 absolute inset-0 bg-black bg-opacity-60"></div>
