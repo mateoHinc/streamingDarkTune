@@ -1,0 +1,88 @@
+const userReviews = [
+  {
+    id: 1,
+    name: "Andrea Pérez",
+    photo: "/src/assets/profile3.jpg",
+    review: "Excelente plataforma, me encanta la variedad de géneros.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Carlos Ruiz",
+    photo: "/src/assets/profile1.jpg",
+    review: "Una experiencia musical única y diferente.",
+    rating: 4,
+  },
+  {
+    id: 3,
+    name: "Lucía Torres",
+    photo: "/src/assets/profile4.jpg",
+    review: "Muy intuitiva y fácil de usar, la recomiendo.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Pedro Gómez",
+    photo: "/src/assets/profile6.jpg",
+    review: "Buen catálogo pero faltan más opciones latinas.",
+    rating: 3,
+  },
+  {
+    id: 5,
+    name: "Marta Rodríguez",
+    photo: "/src/assets/profile5.jpg",
+    review: "La calidad de audio es fantástica.",
+    rating: 4,
+  },
+  {
+    id: 6,
+    name: "David López",
+    photo: "/src/assets/profile7.jpg",
+    review: "Interfaz limpia y moderna, me gusta mucho.",
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Sofía Morales",
+    photo: "/src/assets/profile9.jpg",
+    review: "Las playlists recomendadas son brutales.",
+    rating: 5,
+  },
+  {
+    id: 8,
+    name: "Javier Díaz",
+    photo: "/src/assets/profile10.jpg",
+    review: "Buena app, aunque se cuelga a veces.",
+    rating: 3,
+  },
+  {
+    id: 9,
+    name: "Carla Mendoza",
+    photo: "/src/assets/profile2.jpg",
+    review: "¡Mi app musical favorita del momento!",
+    rating: 5,
+  },
+  {
+    id: 10,
+    name: "Manuel Vera",
+    photo: "/src/assets/profile11.jpg",
+    review: "Fácil de usar y muy rápida. Recomendado.",
+    rating: 4,
+  },
+  {
+    id: 11,
+    name: "Miles Morales",
+    photo: "/src/assets/profile8.jpg",
+    review: "Increíble para descubrir nuevos beats underground.",
+    rating: 5,
+  },
+  {
+    id: 12,
+    name: "Leo Herrera",
+    photo: "/src/assets/profile12.jpg",
+    review: "Gran herramienta para melómanos.",
+    rating: 4,
+  },
+];
+
+export default userReviews;

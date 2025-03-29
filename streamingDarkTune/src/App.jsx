@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import CarruselGenreSection from "./components/CarruselGenreSection";
 
 import React, { useState, useEffect } from "react";
+import UserReviewsSection from "./components/UserReviewsSection";
 
 function App() {
   const [triggerHero, setTriggerHero] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       </main>
       <HeroSection triggerAnimation={triggerHero} />
       <CarruselGenreSection />
+      <UserReviewsSection />
       <Footer />
     </div>
   );
