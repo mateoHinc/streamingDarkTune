@@ -1,27 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 /* eslint-enable no-unused-vars */
 import bgHero from "/assets/hero-section.jpg";
 import panelHero from "/assets/panel-heroSection.png";
 
-function HeroSection({ triggerAnimation }) {
+function HeroSection() {
   const [animate, setAnimate] = useState(false);
+  const sectionRef = useRef(null);
 
   useEffect(() => {
-    if (triggerAnimation) {
-      setAnimate(false); // Reset
-      setTimeout(() => setAnimate(true), 50); // Small delay to retrigger animation
-    }
-  }, [triggerAnimation]);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimate(true);
+        } else {
+          setAnimate(false);
+        }
+      },
+      { threshold: 0.4 }
+    );
 
-  useEffect(() => {
-    // Trigger animation on mount (refresh)
-    setAnimate(true);
+    const currentSection = sectionRef.current;
+    if (currentSection) observer.observe(currentSection);
+
+    return () => {
+      if (currentSection) observer.unobserve(currentSection);
+    };
   }, []);
 
   return (
     <section
+      ref={sectionRef}
       id="hero"
       className="group relative flex flex-col justify-center items-center bg-cover bg-center px-4 sm:px-6 md:px-10 py-16 w-full min-h-screen text-white text-center"
       style={{ backgroundImage: `url(${bgHero})` }}
@@ -63,7 +73,7 @@ function HeroSection({ triggerAnimation }) {
         className="right-2 xs:right-1/2 sm:right-6 md:right-0 bottom-0 sm:bottom-0 left-1/2 md:left-auto z-10 absolute opacity-90 w-60 sm:w-50 md:w-72 lg:w-80 xl:w-96 transition-transform -translate-x-1/2 xs:translate-x-1/2 md:translate-x-0 group-hover:translate-x-[-10px] group-hover:translate-y-[-10px] duration-500 xs:30"
         initial={{ opacity: 0, rotate: -10, y: 50 }}
         animate={animate ? { opacity: 1, rotate: 0, y: 0 } : {}}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1.5, delay: 0.5 }}
       />
     </section>
   );

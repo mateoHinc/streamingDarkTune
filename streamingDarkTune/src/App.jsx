@@ -9,33 +9,14 @@ import CarruselGenreSection from "./components/CarruselGenreSection";
 import UserReviewsSection from "./components/UserReviewsSection";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
-import React, { useState, useEffect } from "react";
-
 function App() {
-  const [triggerHero, setTriggerHero] = useState(false);
-
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash === "#hero") {
-      setTriggerHero(true);
-    }
-  }, []);
-
-  const handleNext = () => {
-    document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
-
-    setTimeout(() => {
-      setTriggerHero(true);
-    }, 300);
-  };
-
   return (
     <div className="flex flex-col bg-primary min-h-screen text-white">
       <Header />
       <main className="flex flex-grow justify-center items-center">
-        <HomePage onNext={handleNext} />
+        <HomePage />
       </main>
-      <HeroSection triggerAnimation={triggerHero} />
+      <HeroSection />
       <CarruselGenreSection />
       <UserReviewsSection />
       <Footer />
