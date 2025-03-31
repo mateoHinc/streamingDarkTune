@@ -73,7 +73,7 @@ function HeroSection() {
         className="right-2 xs:right-1/2 sm:right-6 md:right-0 bottom-0 sm:bottom-0 left-1/2 md:left-auto z-10 absolute opacity-90 w-60 sm:w-50 md:w-72 lg:w-80 xl:w-96 transition-transform -translate-x-1/2 xs:translate-x-1/2 md:translate-x-0 group-hover:translate-x-[-10px] group-hover:translate-y-[-10px] duration-500 xs:30"
         initial={{ opacity: 0, rotate: -10, y: 50 }}
         animate={animate ? { opacity: 1, rotate: 0, y: 0 } : {}}
-        transition={{ duration: 1.5, delay: 0.5 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
       />
     </section>
   );

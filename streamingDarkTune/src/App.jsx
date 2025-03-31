@@ -12,7 +12,7 @@ import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
-    <div className="flex flex-col bg-primary min-h-screen text-white">
+    <div className="flex flex-col bg-primary min-h-screen overflow-x-hidden text-white">
       <Header />
       <main className="flex flex-grow justify-center items-center">
         <HomePage />
