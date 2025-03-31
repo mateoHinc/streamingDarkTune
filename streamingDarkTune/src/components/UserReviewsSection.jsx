@@ -29,8 +29,9 @@ function UserReviewsSection() {
       <video
         autoPlay
         loop
+        muted
         playsInline
-        className="top-0 left-0 z-0 absolute w-full h-full object-cover"
+        className="z-0 absolute inset-0 w-full h-full object-center object-cover"
       >
         <source src="/assets/videoMusicLoop.mp4" type="video/mp4" />
       </video>

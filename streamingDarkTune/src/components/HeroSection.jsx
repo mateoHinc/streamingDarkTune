@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 /* eslint-enable no-unused-vars */
-import bgHero from "../assets/hero-section.jpg";
-import panelHero from "../assets/panel-heroSection.png";
+import bgHero from "/assets/hero-section.jpg";
+import panelHero from "/assets/panel-heroSection.png";
 
 function HeroSection({ triggerAnimation }) {
   const [animate, setAnimate] = useState(false);
