@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import CarruselGenreSection from "./components/CarruselGenreSection";
 import UserReviewsSection from "./components/UserReviewsSection";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <HeroSection />
       <CarruselGenreSection />
       <UserReviewsSection />
+      <ContactUs />
       <Footer />
       <ScrollToTopButton />
     </div>
